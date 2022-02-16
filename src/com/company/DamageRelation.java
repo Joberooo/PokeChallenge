@@ -25,32 +25,32 @@ public class DamageRelation {
 
         JsonArray jsonArray = jsonObject.getAsJsonArray("double_damage_from");
         for(int i = 0; i < jsonArray.size(); i++){
-            this.doubleDamageFrom.add(jsonArray.get(i).getAsJsonObject().get("name").toString());
+            this.doubleDamageFrom.add(jsonArray.get(i).getAsJsonObject().get("name").getAsString());
         }
 
         jsonArray = jsonObject.getAsJsonArray("double_damage_to");
         for(int i = 0; i < jsonArray.size(); i++){
-            this.doubleDamageTo.add(jsonArray.get(i).getAsJsonObject().get("name").toString());
+            this.doubleDamageTo.add(jsonArray.get(i).getAsJsonObject().get("name").getAsString());
         }
 
         jsonArray = jsonObject.getAsJsonArray("half_damage_from");
         for(int i = 0; i < jsonArray.size(); i++){
-            this.halfDamageFrom.add(jsonArray.get(i).getAsJsonObject().get("name").toString());
+            this.halfDamageFrom.add(jsonArray.get(i).getAsJsonObject().get("name").getAsString());
         }
 
         jsonArray = jsonObject.getAsJsonArray("half_damage_to");
         for(int i = 0; i < jsonArray.size(); i++){
-            this.halfDamageTo.add(jsonArray.get(i).getAsJsonObject().get("name").toString());
+            this.halfDamageTo.add(jsonArray.get(i).getAsJsonObject().get("name").getAsString());
         }
 
         jsonArray = jsonObject.getAsJsonArray("no_damage_from");
         for(int i = 0; i < jsonArray.size(); i++){
-            this.noDamageFrom.add(jsonArray.get(i).getAsJsonObject().get("name").toString());
+            this.noDamageFrom.add(jsonArray.get(i).getAsJsonObject().get("name").getAsString());
         }
 
         jsonArray = jsonObject.getAsJsonArray("no_damage_to");
         for(int i = 0; i < jsonArray.size(); i++){
-            this.noDamageTo.add(jsonArray.get(i).getAsJsonObject().get("name").toString());
+            this.noDamageTo.add(jsonArray.get(i).getAsJsonObject().get("name").getAsString());
         }
     }
 }

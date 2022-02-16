@@ -10,7 +10,8 @@ public class CalcDamage {
 
     public CalcDamage() throws IOException {
 
-        String[] types = new String[]{"fire", "ground", "rock", "water", "bug", "steel", "grass", "ice", "fairy", "dragon", "psychic", "fighting", "poison", "dark", "normal"};
+        String[] types = new String[]{"fire", "ground", "rock", "water", "bug", "steel", "grass", "ice", "fairy",
+                "dragon", "psychic", "fighting", "poison", "dark", "normal"};
         for(String type : types){
             damageByType.put(type, new DamageRelation(type));
         }
