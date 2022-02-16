@@ -8,7 +8,7 @@ import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 
 public class PokeRestAPI {
-    public static String getJsonString(String type) throws IOException{
+    public static String getJsonString(String type) throws IOException {
         String url = "https://pokeapi.co/api/v2/type/" + type;
         URLConnection connection = new URL(url).openConnection();
         connection.connect();
@@ -17,7 +17,7 @@ public class PokeRestAPI {
 
         StringBuilder sb = new StringBuilder();
         String line;
-        while((line = r.readLine()) != null){
+        while ((line = r.readLine()) != null) {
             sb.append(line);
         }
 
